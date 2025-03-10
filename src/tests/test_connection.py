@@ -1113,7 +1113,7 @@ def test_result_set_collection_iterate_tuple():
 
 def test_result_set_collection_is_last():
     collection = ResultSetCollection()
-    first, second = (object(),), (object(),)
+    first, second = object(), object()
     collection.append(first)
 
     assert len(collection) == 1
